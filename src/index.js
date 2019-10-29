@@ -1,3 +1,6 @@
+var Chart = require('chart.js');
+Chart = typeof Chart === 'function' ? Chart : window.Chart;
+
 (function(Chart) {
   var isObject = function(obj) {
     var type = typeof obj;
